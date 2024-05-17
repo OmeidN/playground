@@ -7,6 +7,7 @@
 using namespace std;
 
 // Partners : Omeid Nadery & Kyle Driver
+/*
 
 string reverseName(string& name){
 	string temp = name;
@@ -22,7 +23,6 @@ string reverseName(string& name){
 	
 }
 
-
 int main()
 {
 	string name = "Omeid Nadery";
@@ -34,5 +34,30 @@ int main()
 	return EXIT_SUCCESS;
 }
 
+*/
+
+bool checkForDupes(vector<int> list){
+	vector<int> inList;
+	for (int i = 0; i < list.size(); ++i){
+		for (int j = i + 1; j < list.size(); ++j){
+			if (list.at(i) == list.at(j)){
+				cout << "Duplicate found: " << list.at(i) << endl;
+				cout << "Duplicate locations: " << i << ", " << j << endl;
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+int main()
+{
+	vector<int> hasdupe { 5, 3, 2, 1, 0, 4, 9, 8, 3, 50, 234, 858, 1000 };
+	vector<int> nothasdupe { 5, 3, 2, 1, 0, 4, 9, 8, 348975983, 50, 234, 858, 1000 };
+
+	cout << checkForDupes(hasdupe) << endl;
+	cout << checkForDupes(nothasdupe) << endl;
+
+}
 
 
