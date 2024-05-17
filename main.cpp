@@ -9,6 +9,8 @@ using namespace std;
 // Partners : Omeid Nadery & Kyle Driver
 /*
 
+Omeid Nadery: Reverse a string without using loops.
+
 string reverseName(string& name){
 	string temp = name;
 	string reversed = "";
@@ -36,6 +38,11 @@ int main()
 
 */
 
+
+/* 
+
+Kyle: Find the duplicate integer in an array.
+
 bool checkForDupes(vector<int> list){
 	vector<int> inList;
 	for (int i = 0; i < list.size(); ++i){
@@ -60,4 +67,4 @@ int main()
 
 }
 
-
+*/
